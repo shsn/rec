@@ -1,207 +1,697 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- Basic -->
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- Mobile Metas -->
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <!-- Site Metas -->
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <link rel="shortcut icon" href="images/favicon.png" type="" />
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Recipe Site</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-        <title>MuLearn</title>
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-        <!-- bootstrap core css -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
-        <!-- fonts style -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-            rel="stylesheet"
-        />
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-        <!--owl slider stylesheet -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        />
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
-        <!-- font awesome style -->
-        <link href="css/font-awesome.min.css" rel="stylesheet" />
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-        <!-- Custom styles for this template -->
-        <link href="css/style.css" rel="stylesheet" />
-        <!-- responsive style -->
-        <link href="css/responsive.css" rel="stylesheet" />
-    </head>
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-    <body>
-        <div class="hero_area">
-            <div class="hero_bg_box">
-                <div class="bg_img_box">
-                    <img src="images/hero-bg.png" alt="" />
-                </div>
-            </div>
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
-            <!-- header section strats -->
-            <header class="header_section">
-                <div class="container-fluid">
-                    <nav class="navbar navbar-expand-lg custom_nav-container">
-                        <a class="navbar-brand" href="index.html">
-                            <span> MuLearn </span>
-                        </a>
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span class=""> </span>
-                        </button>
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-                        <div
-                            class="collapse navbar-collapse"
-                            id="navbarSupportedContent"
-                        >
-                            <ul class="navbar-nav"></ul>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            <!-- end header section -->
-            <!-- slider section -->
-            <section class="slider_section">
-                <div
-                    id="customCarousel1"
-                    class="carousel slide"
-                    data-ride="carousel"
-                >
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="detail-box">
-                                            <h1>
-                                                Github<br />
-                                                Pages
-                                            </h1>
-                                            <p>
-                                                Hosting your first GitHub web
-                                                page
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="img-box">
-                                            <img
-                                                src="images/slider-img.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="detail-box">
-                                            <h1>Step One</h1>
-                                            <p>
-                                                Fork the GitHub template
-                                                repository, give the repo any
-                                                name you wish.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="img-box">
-                                            <img
-                                                src="images/slider-img.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="detail-box">
-                                            <h1>Step Two</h1>
-                                            <p>
-                                                Go to the repo settings then click on
-                                                Pages tab on the left, Go to the branch section, change the "None" to "main" and click on save.
-												That's all, your are done.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="img-box">
-                                            <img
-                                                src="images/slider-img.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li
-                            data-target="#customCarousel1"
-                            data-slide-to="0"
-                            class="active"
-                        ></li>
-                        <li
-                            data-target="#customCarousel1"
-                            data-slide-to="1"
-                        ></li>
-                        <li
-                            data-target="#customCarousel1"
-                            data-slide-to="2"
-                        ></li>
-                    </ol>
-                </div>
-            </section>
-            <!-- end slider section -->
-        </div>
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
-        <!-- jQery -->
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-        <!-- popper js -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <!-- bootstrap js -->
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <!-- owl slider -->
-        <script
-            type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        ></script>
-        <!-- custom js -->
-        <script type="text/javascript" src="js/custom.js"></script>
-        <!-- Google Map -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-        <!-- End Google Map -->
-    </body>
-</html>
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="12d3b0cc-a2bc-804a-afbf-ded6825456de" class="page sans"><header><h1 class="page-title">Recipe Site</h1><p class="page-description"></p></header><div class="page-body"><p id="12d3b0cc-a2bc-80ab-8fe9-c3f2cdf73036" class="">
+</p><h1 id="12d3b0cc-a2bc-805c-847c-d3955dd61c27" class="">Getting Started</h1><p id="12d3b0cc-a2bc-8006-b72f-c8f659c3422c" class="">Paprika&#x27;s built-in web browser lets you search the internet for recipes to download. Our natural language processing engine can automatically download recipes written in English from most websites.</p><p id="12d3b0cc-a2bc-80c6-9171-dca647f45baf" class="">
+</p><h1 id="12d3b0cc-a2bc-802e-87de-fa097e871292" class="">Search for Recipes</h1><p id="12d3b0cc-a2bc-808d-a75d-fcc676222bee" class="">
+</p><p id="12d3b0cc-a2bc-8042-a3eb-e89b1db59714" class="">
+</p><p id="12d3b0cc-a2bc-80f7-a5f5-e13b1f93f7f9" class=""><form action="https://duckduckgo.com/" method="get" style="display: flex; gap: 8px; align-items: center; max-width: 600px; margin: 0 auto;"><input type="text" name="q" placeholder="DuckDuckGo Recipe Search" 
+           style="padding: 12px 16px; font-size: 16px; border: 2px solid #ccc; border-radius: 6px; flex: 1; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);">
+    <button type="submit" 
+            style="padding: 12px 20px; font-size: 16px; border: none; background-color: #4CAF50; color: white; border-radius: 6px; cursor: pointer; transition: background-color 0.2s;"> Search </button>
+</form>
+
+<strong>Note</strong> You can always return to this search page using the first bookmark in Paprika&#x27;s bookmarks list.</p><p id="12d3b0cc-a2bc-8042-ac17-e9376fe5d4b2" class="">
+</p><h1 id="12d3b0cc-a2bc-8069-8bf1-e0923600f94e" class="">How to Download a Recipe</h1><ol type="1" id="12d3b0cc-a2bc-8022-8bc2-d4abbde7fd57" class="numbered-list" start="1"><li>Use the browser to find a recipe you would like to download.</li></ol><ol type="1" id="12d3b0cc-a2bc-8058-9e8a-da53368c5f47" class="numbered-list" start="2"><li>Press the <strong>Download</strong> button in the lower right corner of the toolbar.</li></ol><ol type="1" id="12d3b0cc-a2bc-8074-ad04-eb2fae87300b" class="numbered-list" start="3"><li>Paprika will attempt to download the recipe from the page. Press the <strong>Save</strong> button to save it.</li></ol><ol type="1" id="12d3b0cc-a2bc-8072-ba4b-de7e1812a03b" class="numbered-list" start="4"><li>If Paprika cannot figure out how to download the recipe automatically, you can use the clipboard tools (described in the <a href="https://www.paprikaapp.com/help/mac/">User Guide</a>) to clip the recipe manually.</li></ol><p id="12d3b0cc-a2bc-8081-a558-e8e16e1fd596" class=""><strong>Note</strong> The recipe needs to be loaded and visible in the browser before you press the <strong>Download</strong> button.</p><p id="12d3b0cc-a2bc-803e-973e-f5aa55d861bd" class="">
+</p><p id="12d3b0cc-a2bc-80ba-990f-c0f103f2bca7" class="">
+</p><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Popular</summary><div class="indented"><ul id="12d3b0cc-a2bc-80ae-96b8-f3455229c0a7" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.allrecipes.com/">AllRecipes</a></li></ul><ul id="12d3b0cc-a2bc-80f6-b8b2-e83a6b6ed291" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.americastestkitchen.com/">America&#x27;s Test Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-803e-8ac6-c4e0e348e5b2" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.bbc.co.uk/food/">BBC Food</a></li></ul><ul id="12d3b0cc-a2bc-8029-9480-fb7714f09cac" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.bbcgoodfood.com/">BBC Good Food</a></li></ul><ul id="12d3b0cc-a2bc-80cb-9e9f-dc4f76a41f13" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.bettycrocker.com/">Betty Crocker</a></li></ul><ul id="12d3b0cc-a2bc-8033-923a-d26505aef7ff" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.bigoven.com/">Big Oven</a></li></ul><ul id="12d3b0cc-a2bc-805b-ac57-f4941c8af650" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.bonappetit.com/">Bon Appetit</a></li></ul><ul id="12d3b0cc-a2bc-8057-ac57-e022e40f9f28" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.chowhound.com/">Chowhound</a></li></ul><ul id="12d3b0cc-a2bc-8020-929f-def776f6871e" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cookscountry.com/">Cook&#x27;s Country</a></li></ul><ul id="12d3b0cc-a2bc-80f7-830a-c7accaa78b95" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cooksillustrated.com/">Cook&#x27;s Illustrated</a></li></ul><ul id="12d3b0cc-a2bc-8025-9e4d-d11455007ff8" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cooks.com/">Cooks.com</a></li></ul><ul id="12d3b0cc-a2bc-80c1-9099-d7af22283d40" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.eatingwell.com/">Eating Well</a></li></ul><ul id="12d3b0cc-a2bc-802a-a9e3-e66154f3081a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.epicurious.com/">Epicurious</a></li></ul><ul id="12d3b0cc-a2bc-8059-b883-d5608843c5b8" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.finecooking.com/">Fine Cooking</a></li></ul><ul id="12d3b0cc-a2bc-805b-9360-e5f9266abe50" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.foodandwine.com/">Food &amp; Wine</a></li></ul><ul id="12d3b0cc-a2bc-80c7-8d35-c5d572179aeb" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.foodnetwork.com/">Food Network</a></li></ul><ul id="12d3b0cc-a2bc-805f-b431-d0328c7b4b02" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.food.com/">Food.com</a></li></ul><ul id="12d3b0cc-a2bc-8073-b942-db682d121567" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.goodfood.com.au/">GoodFood (AU)</a></li></ul><ul id="12d3b0cc-a2bc-8003-b108-dca604875a92" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.gourmet.com/">Gourmet</a></li></ul><ul id="12d3b0cc-a2bc-8079-85d8-cb9586c39391" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.hungry-girl.com/">Hungry Girl</a></li></ul><ul id="12d3b0cc-a2bc-80ad-8df5-fda7d14e77c4" class="bulleted-list"><li style="list-style-type:disc"><a href="http://joyofbaking.com/">Joy of Baking</a></li></ul><ul id="12d3b0cc-a2bc-80cf-b388-f71bb7d88b95" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.kingarthurflour.com/">King Arthur Flour</a></li></ul><ul id="12d3b0cc-a2bc-8054-9ef7-e7bacf09123c" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.mygourmetconnection.com/">My Gourmet Connection</a></li></ul><ul id="12d3b0cc-a2bc-80e9-bf99-d6b5122c35c1" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.myrecipes.com/">My Recipes</a></li></ul><ul id="12d3b0cc-a2bc-803b-a3e3-e397de742c5f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://cooking.nytimes.com/">New York Times</a></li></ul><ul id="12d3b0cc-a2bc-8012-8c46-c20ab0b44264" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.pbs.org/food/recipes/">PBS Food</a></li></ul><ul id="12d3b0cc-a2bc-8071-a1ed-d8601e0f43b9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.pillsbury.com/">Pillsbury</a></li></ul><ul id="12d3b0cc-a2bc-808f-a526-d661df88223d" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.recipe.com/">Recipe.com</a></li></ul><ul id="12d3b0cc-a2bc-80d8-a702-d78f0cbbed30" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.saveur.com/">Saveur</a></li></ul><ul id="12d3b0cc-a2bc-802d-bc7a-e3f90713d03e" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.seriouseats.com/">Serious Eats</a></li></ul><ul id="12d3b0cc-a2bc-807a-a22a-e016d1b67925" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.simplyrecipes.com/">Simply Recipes</a></li></ul><ul id="12d3b0cc-a2bc-8086-82e0-c1804129365f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tasteofhome.com/">Taste of Home</a></li></ul><ul id="12d3b0cc-a2bc-8038-8770-dc8b594bdfb1" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tastykitchen.com/">Tasty Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-80f9-8d6a-fdd685513af5" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.the-girl-who-ate-everything.com/">The Girl Who Ate Everything</a></li></ul><ul id="12d3b0cc-a2bc-80a1-82c2-fd50e892b0ae" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.thepioneerwoman.com/">The Pioneer Woman</a></li></ul><ul id="12d3b0cc-a2bc-80b2-af42-c93627eee607" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.washingtonpost.com/pb/recipes">The Washington Post</a></li></ul><ul id="12d3b0cc-a2bc-807a-9adc-fc1d3bf95062" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.womansday.com/">Woman&#x27;s Day</a></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong><a href="#lifestyle">Lifestyle &amp; Family</a></strong></summary><div class="indented"><ul id="12d3b0cc-a2bc-80fa-a3c3-d439263ea347" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.bhg.com/">Better Homes &amp; Gardens</a></li></ul><ul id="12d3b0cc-a2bc-80da-bda8-ed1afc509418" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.canadianliving.com/">Canadian Living</a></li></ul><ul id="12d3b0cc-a2bc-8041-ad9d-cf3710ff23ed" class="bulleted-list"><li style="list-style-type:disc"><a href="http://family.disney.com/">Disney Recipes</a></li></ul><ul id="12d3b0cc-a2bc-800a-9127-d44e803a5d08" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.familycircle.com/">Family Circle</a></li></ul><ul id="12d3b0cc-a2bc-80e9-9cb9-d0a4b79b2053" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.goodhousekeeping.com/">Good Housekeeping</a></li></ul><ul id="12d3b0cc-a2bc-8073-802e-e00777e98641" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.livestrong.com/">Live Strong</a></li></ul><ul id="12d3b0cc-a2bc-8008-b9ad-d8900539f179" class="bulleted-list"><li style="list-style-type:disc"><a href="http://recipes.menshealth.com/">Men&#x27;s Health</a></li></ul><ul id="12d3b0cc-a2bc-805f-9056-c0f89cb85afc" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.midwestliving.com/">Midwest Living</a></li></ul><ul id="12d3b0cc-a2bc-809b-b91e-f29fd929a3a0" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.realsimple.com/">Real Simple</a></li></ul><ul id="12d3b0cc-a2bc-806d-94ee-e87ec5dbc09e" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.webmd.com/">WebMD</a></li></ul><ul id="12d3b0cc-a2bc-80c6-8962-dbaa4ffd3ecd" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.wholeliving.com/">Whole Living</a></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong><a href="#chefs">Chefs</a></strong></summary><div class="indented"><ul id="12d3b0cc-a2bc-80d8-a184-e8882d0075b7" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.deliaonline.com/">Delia</a></li></ul><ul id="12d3b0cc-a2bc-8024-ada6-fac3028d5777" class="bulleted-list"><li style="list-style-type:disc"><a href="http://donnahay.com.au/">Donna Hay</a></li></ul><ul id="12d3b0cc-a2bc-80bd-abd1-f1e8400ce2b8" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.emerils.com/">Emerils</a></li></ul><ul id="12d3b0cc-a2bc-8029-a43c-c6b8fac266ae" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.rachaelraymag.com/">Every Day with Rachael Ray</a></li></ul><ul id="12d3b0cc-a2bc-80f9-8fe4-f0c43174f192" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.jamieoliver.com/">Jamie Oliver</a></li></ul><ul id="12d3b0cc-a2bc-80ae-a6d1-c6ec64588318" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.marthastewart.com/">Martha Stewart</a></li></ul><ul id="12d3b0cc-a2bc-80e5-94aa-daa7ae454f69" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.nigella.com/">Nigella</a></li></ul><ul id="12d3b0cc-a2bc-803a-a4d1-ef8d556b8d3c" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.pauladeen.com/">Paula Deen</a></li></ul><ul id="12d3b0cc-a2bc-80d2-a56a-fd14f09cbf19" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.rachaelray.com/">Rachael Ray</a></li></ul><ul id="12d3b0cc-a2bc-8082-8651-e7603fb756c9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.rachaelrayshow.com/">Rachael Ray Show</a></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong><a href="#blog">Food Blogs &amp; Niche Sites</a></strong></summary><div class="indented"><ul id="12d3b0cc-a2bc-805d-90fc-f2536a03e245" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.100daysofrealfood.com/">100 Days of Real Food</a></li></ul><ul id="12d3b0cc-a2bc-8080-ba1e-da0d96a0240a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.about.com/">About.com Recipes</a></li></ul><ul id="12d3b0cc-a2bc-8066-8f5b-d0c814175268" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.alaskafromscratch.com/">Alaska from Scratch</a></li></ul><ul id="12d3b0cc-a2bc-80cd-b887-e3cac2b9938a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://alldayidreamaboutfood.com/">All Day I Dream About Food</a></li></ul><ul id="12d3b0cc-a2bc-80ca-9b6a-e6a6e1c512de" class="bulleted-list"><li style="list-style-type:disc"><a href="http://amidstthechaos.ca/">Amidst the Chaos</a></li></ul><ul id="12d3b0cc-a2bc-8035-99f3-c2a82c4f044d" class="bulleted-list"><li style="list-style-type:disc"><a href="http://angiesrecipes.blogspot.com/">Angies Recipes</a></li></ul><ul id="12d3b0cc-a2bc-80c7-90e0-efaa0d372704" class="bulleted-list"><li style="list-style-type:disc"><a href="http://annies-eats.com/">Annie&#x27;s Eats</a></li></ul><ul id="12d3b0cc-a2bc-80c0-bcda-dd9ee6eff4d7" class="bulleted-list"><li style="list-style-type:disc"><a href="http://bakedbree.com/">Baked Bree</a></li></ul><ul id="12d3b0cc-a2bc-80dd-96ea-e53d9a766f15" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.beyondkimchee.com/">Beyond Kimchee</a></li></ul><ul id="12d3b0cc-a2bc-8003-a264-c7c4a87d5a0c" class="bulleted-list"><li style="list-style-type:disc"><a href="http://brokeassgourmet.com/">Broke Ass Gourmet</a></li></ul><ul id="12d3b0cc-a2bc-80c7-89aa-fc0c8f47fed9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://chefmichaelsmith.com/">Chef Michael Smith</a></li></ul><ul id="12d3b0cc-a2bc-80bf-96b4-d26bde030036" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.citronetvanille.com/">Citron et Vanille (English)</a></li></ul><ul id="12d3b0cc-a2bc-80be-aae6-e37c1a83ecc3" class="bulleted-list"><li style="list-style-type:disc"><a href="http://civilizedcavemancooking.com/">Civilized Caveman Cooking</a></li></ul><ul id="12d3b0cc-a2bc-8010-b324-cf157a7dabc1" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.closetcooking.com/">Closet Cooking</a></li></ul><ul id="12d3b0cc-a2bc-8091-ab0e-f06ddaa1fcf5" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.davidlebovitz.com/">David Lebovitz</a></li></ul><ul id="12d3b0cc-a2bc-80b8-b34a-cdf266a2bdf5" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.dawnsrecipes.com/">Dawn&#x27;s Recipes</a></li></ul><ul id="12d3b0cc-a2bc-804d-8ddc-d4bc274c4b76" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.diabeticlivingonline.com/">Diabetic Living Online</a></li></ul><ul id="12d3b0cc-a2bc-802e-826c-c37311de06c9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://ditchthewheat.com/">Ditch the Wheat</a></li></ul><ul id="12d3b0cc-a2bc-8001-bbd2-c1ba44a4b8f9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://eatnourishing.com/">Eat Nourishing</a></li></ul><ul id="12d3b0cc-a2bc-809d-8db7-d7d7ddb31f06" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.elanaspantry.com/">Elana&#x27;s Pantry</a></li></ul><ul id="12d3b0cc-a2bc-80f2-aaef-f9b131fa1a44" class="bulleted-list"><li style="list-style-type:disc"><a href="http://elisastable.wordpress.com/">Elisa&#x27;s Table</a></li></ul><ul id="12d3b0cc-a2bc-8008-9ca3-d6f9c5517a55" class="bulleted-list"><li style="list-style-type:disc"><a href="http://recipes.epicurean.com/">Epicurean</a></li></ul><ul id="12d3b0cc-a2bc-80d7-8ad2-e842d5b1b155" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.ezrapoundcake.com/">Ezra Pound Cake</a></li></ul><ul id="12d3b0cc-a2bc-8048-bce3-d786641dc0bc" class="bulleted-list"><li style="list-style-type:disc"><a href="http://fastpaleo.com/">Fast Paleo</a></li></ul><ul id="12d3b0cc-a2bc-80fe-a838-fc61674e17fb" class="bulleted-list"><li style="list-style-type:disc"><a href="http://blog.fatfreevegan.com/">Fat Free Vegan</a></li></ul><ul id="12d3b0cc-a2bc-807a-af0e-d43e8363a1a7" class="bulleted-list"><li style="list-style-type:disc"><a href="http://firstlookthencook.com/">First Look, Then Cook</a></li></ul><ul id="12d3b0cc-a2bc-80db-9022-f4f9e29a0ba0" class="bulleted-list"><li style="list-style-type:disc"><a href="http://foodandspice.blogspot.com/">Food and Spice</a></li></ul><ul id="12d3b0cc-a2bc-80b2-8d44-d86756f52b10" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.foodgeeks.com/">Food Geeks</a></li></ul><ul id="12d3b0cc-a2bc-80a4-bc5f-c701347a1b6b" class="bulleted-list"><li style="list-style-type:disc"><a href="http://herbivoracious.com/">Herbivoracious</a></li></ul><ul id="12d3b0cc-a2bc-806c-923f-f228313f79fa" class="bulleted-list"><li style="list-style-type:disc"><a href="http://katieatthekitchendoor.com/">Katie at the Kitchen Door</a></li></ul><ul id="12d3b0cc-a2bc-800d-a90e-e6ce35398d04" class="bulleted-list"><li style="list-style-type:disc"><a href="http://gracessweetlife.com/">La Mia Vita Dolce (My Sweet Life)</a></li></ul><ul id="12d3b0cc-a2bc-80df-a837-f889a2d16c39" class="bulleted-list"><li style="list-style-type:disc"><a href="http://leitesculinaria.com/">Leite&#x27;s Culinaria</a></li></ul><ul id="12d3b0cc-a2bc-806e-9517-e39c61523960" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.loveandoliveoil.com/">Love &amp; Olive Oil</a></li></ul><ul id="12d3b0cc-a2bc-8090-ab09-f629d19a526f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://mariamindbodyhealth.com/">Maria Mind Body Health</a></li></ul><ul id="12d3b0cc-a2bc-802b-96d9-f391e3746bdf" class="bulleted-list"><li style="list-style-type:disc"><a href="http://naturallyella.com/">Naturally Ella</a></li></ul><ul id="12d3b0cc-a2bc-8047-ad40-cde6f99a69dd" class="bulleted-list"><li style="list-style-type:disc"><a href="http://norecipes.com/">No Recipes</a></li></ul><ul id="12d3b0cc-a2bc-806b-8a81-f85f683dcde1" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.ourbestbites.com/">Our Best Bites</a></li></ul><ul id="12d3b0cc-a2bc-8087-9864-ef0db14875e2" class="bulleted-list"><li style="list-style-type:disc"><a href="http://paleomg.com/">PaleOMG</a></li></ul><ul id="12d3b0cc-a2bc-8071-a441-c712005c5a46" class="bulleted-list"><li style="list-style-type:disc"><a href="http://recipes.prevention.com/">Prevention</a></li></ul><ul id="12d3b0cc-a2bc-80a3-bacc-e49eed819d04" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.purewow.com/">Pure Wow</a></li></ul><ul id="12d3b0cc-a2bc-80ae-9b06-e77d413c0f74" class="bulleted-list"><li style="list-style-type:disc"><a href="http://rasamalaysia.com/">Rasa Malaysia</a></li></ul><ul id="12d3b0cc-a2bc-8080-8814-c55df3952f8d" class="bulleted-list"><li style="list-style-type:disc"><a href="http://reciperenovator.com/">Recipe Renovator</a></li></ul><ul id="12d3b0cc-a2bc-800e-ad61-c672df2b1884" class="bulleted-list"><li style="list-style-type:disc"><a href="http://saltandfat.com/">Salt and Fat</a></li></ul><ul id="12d3b0cc-a2bc-80c9-b002-ce1da4f203c6" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.sippitysup.com/">Sippity Sup</a></li></ul><ul id="12d3b0cc-a2bc-8080-8773-ed0f5fd679f8" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.skinnyms.com/">Skinny Ms.</a></li></ul><ul id="12d3b0cc-a2bc-80a1-bb52-c62e25705055" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.skinnytaste.com/">Skinny Taste</a></li></ul><ul id="12d3b0cc-a2bc-80ad-b125-d389bb4fbe32" class="bulleted-list"><li style="list-style-type:disc"><a href="http://smittenkitchen.com/">Smitten Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-8002-95d9-cf0aac6ae023" class="bulleted-list"><li style="list-style-type:disc"><a href="http://steamykitchen.com/">Steamy Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-80ab-b927-e16cc8f2ee61" class="bulleted-list"><li style="list-style-type:disc"><a href="http://svkitchen.com/">SV Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-80b0-a81d-c086b3ba03f5" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tablespoon.com/">Tablespoon</a></li></ul><ul id="12d3b0cc-a2bc-808b-ac44-ebdc92cfec1f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tastespotting.com/">Tastespotting</a></li></ul><ul id="12d3b0cc-a2bc-80c9-bd14-f2ddc5205bd9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.thegraciouspantry.com/">The Gracious Pantry</a></li></ul><ul id="12d3b0cc-a2bc-806d-b5d6-d062f0170986" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.thehealthychef.com/">The Healthy Chef</a></li></ul><ul id="12d3b0cc-a2bc-80a0-88cd-ee0c5ef2c568" class="bulleted-list"><li style="list-style-type:disc"><a href="http://elsbro.com/blog/">The Whinery (elsbro.com/blog)</a></li></ul><ul id="12d3b0cc-a2bc-80dc-b89e-e504611c05b2" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.theyummylife.com/">The Yummy Life</a></li></ul><ul id="12d3b0cc-a2bc-806b-9fed-ce48229bfa71" class="bulleted-list"><li style="list-style-type:disc"><a href="http://vegweb.com/">Veg Web</a></li></ul><ul id="12d3b0cc-a2bc-80f8-8af0-e91e21ba431d" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.vegalicious.org/">Vegalicious</a></li></ul><ul id="12d3b0cc-a2bc-804b-a20f-fa983802a4c8" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.vegetariantimes.com/">Vegetarian Times</a></li></ul><ul id="12d3b0cc-a2bc-8078-9b7c-caa96f85b45a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.yogajournal.com/">Yoga Journal</a></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong><a href="#favorites">User Favorites</a></strong></summary><div class="indented"><ul id="12d3b0cc-a2bc-80f1-b1e2-d0e8cb412917" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.101cookbooks.com/">101 Cookbooks</a></li></ul><ul id="12d3b0cc-a2bc-8011-8adf-fe515235f250" class="bulleted-list"><li style="list-style-type:disc"><a href="http://againstallgrain.com/">Against All Grain</a></li></ul><ul id="12d3b0cc-a2bc-8098-9db1-f8ea1e675f7a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.aol.com/food/">AOL Recipes</a></li></ul><ul id="12d3b0cc-a2bc-808b-9750-e00f762eb6e1" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.atkins.com/">Atkins</a></li></ul><ul id="12d3b0cc-a2bc-8080-8149-ea362e13ad9d" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.betterrecipes.com/">Better Recipes</a></li></ul><ul id="12d3b0cc-a2bc-8067-8e6d-f6c1428e8db0" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.bobsredmill.com/">Bob&#x27;s Red Mill</a></li></ul><ul id="12d3b0cc-a2bc-80ac-86e9-ded4953b8e8b" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.californiaavocado.com/">California Avocado</a></li></ul><ul id="12d3b0cc-a2bc-8079-9204-f09221462490" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.campbellskitchen.com/">Campbell&#x27;s Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-80db-9752-ea10bfca7091" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cdkitchen.com/">CD Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-80b6-92d1-d602b1b0e144" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cleaneatingmag.com/">Clean Eating Mag</a></li></ul><ul id="12d3b0cc-a2bc-807a-96fe-f7d9d69a3c6e" class="bulleted-list"><li style="list-style-type:disc"><a href="http://cookeatshare.com/">Cook Eat Share</a></li></ul><ul id="12d3b0cc-a2bc-800d-809f-f7fa94cfbcf6" class="bulleted-list"><li style="list-style-type:disc"><a href="http://cookieandkate.com/">Cookie + Kate</a></li></ul><ul id="12d3b0cc-a2bc-8056-a564-ea351d4baee1" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cookingchanneltv.com/">Cooking Channel TV</a></li></ul><ul id="12d3b0cc-a2bc-808d-92eb-e9194ec3c54d" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cookstr.com/">Cookstr</a></li></ul><ul id="12d3b0cc-a2bc-8066-b873-dfecf7baead4" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cuisinerecipes.com/">Cuisine Recipes</a></li></ul><ul id="12d3b0cc-a2bc-8089-9de9-fea5fde5bf1b" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.delish.com/">Delish</a></li></ul><ul id="12d3b0cc-a2bc-80d6-b99b-c0c1df26fbc2" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.doctoroz.com/">Doctor Oz</a></li></ul><ul id="12d3b0cc-a2bc-8086-bf48-c8512988c265" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.eatwisconsincheese.com/">Eat Wisconsin Cheese</a></li></ul><ul id="12d3b0cc-a2bc-803e-b632-d431c4b27cb3" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.food52.com/">Food 52</a></li></ul><ul id="12d3b0cc-a2bc-80cd-9a4d-d0ffc544a507" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.foodland.com/">Foodland</a></li></ul><ul id="12d3b0cc-a2bc-8066-8a5c-d24c8ebdc3ef" class="bulleted-list"><li style="list-style-type:disc"><a href="http://abcnews.go.com/gma/recipes">Good Morning America (abcnews.go.com)</a></li></ul><ul id="12d3b0cc-a2bc-804d-9d2d-c8ed9cb0435d" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.goya.com/">Goya</a></li></ul><ul id="12d3b0cc-a2bc-80fc-9b64-eb402f88d782" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.grouprecipes.com/">Group Recipes</a></li></ul><ul id="12d3b0cc-a2bc-8095-b8ca-ddd2db7038e8" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.halfhourmeals.com/">Half Hour Meals</a></li></ul><ul id="12d3b0cc-a2bc-8051-af06-e800fc3c03e2" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.hunts.com/">Hunt&#x27;s</a></li></ul><ul id="12d3b0cc-a2bc-80c6-820b-fdc5437a0ac4" class="bulleted-list"><li style="list-style-type:disc"><a href="http://iquitsugar.com/">I Quit Sugar</a></li></ul><ul id="12d3b0cc-a2bc-801e-a906-d1bdac25f535" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.justapinch.com/">Just a Pinch</a></li></ul><ul id="12d3b0cc-a2bc-8058-abe3-e750c14300bf" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.keyingredient.com/">Key Ingredient</a></li></ul><ul id="12d3b0cc-a2bc-80e6-86f1-cc4f1af84eb0" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.kraftrecipes.com/">Kraft Recipes</a></li></ul><ul id="12d3b0cc-a2bc-8025-b079-de27429c8315" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.latartinegourmande.com/">La Tartine Gourmande</a></li></ul><ul id="12d3b0cc-a2bc-80f0-9eaf-fe41db3537ca" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.mccormickgourmet.com/">McCormick Gourmet</a></li></ul><ul id="12d3b0cc-a2bc-8082-a684-d985ae7fd634" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.meals.com/">Meals.com</a></li></ul><ul id="12d3b0cc-a2bc-8063-9169-fe5cd1aee1ba" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.mrfood.com/">Mr. Food</a></li></ul><ul id="12d3b0cc-a2bc-80e3-b45f-d8220609e71c" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.muirglen.com/">Muir Glen</a></li></ul><ul id="12d3b0cc-a2bc-8010-ad2a-ed07d3a6ffe4" class="bulleted-list"><li style="list-style-type:disc"><a href="http://nourishedkitchen.com/">Nourished Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-803e-91fb-d2440f91661d" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.publix.com/">Publix</a></li></ul><ul id="12d3b0cc-a2bc-8087-96c2-f65883f84c1e" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.rd.com/food/">Reader&#x27;s Digest</a></li></ul><ul id="12d3b0cc-a2bc-8088-9dd4-fec64130a057" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.readersdigest.ca/">Reader&#x27;s Digest (CA)</a></li></ul><ul id="12d3b0cc-a2bc-801c-a349-f99291574f15" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.readyseteat.com/">Ready Set Eat</a></li></ul><ul id="12d3b0cc-a2bc-806f-9fe0-f9628c869cc2" class="bulleted-list"><li style="list-style-type:disc"><a href="http://realmomkitchen.com/">Real Mom Kitchen</a></li></ul><ul id="12d3b0cc-a2bc-8062-9168-e6eb483cc4be" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.recipelion.com/">Recipe Lion</a></li></ul><ul id="12d3b0cc-a2bc-8017-96ed-c3488fc52a7f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://relish.com/">Relish</a></li></ul><ul id="12d3b0cc-a2bc-80ed-9b97-efd397a8767e" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.rippedrecipes.com/">Ripped Recipes</a></li></ul><ul id="12d3b0cc-a2bc-8005-947b-c3c8389e3159" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.runnersworld.com/">Runner&#x27;s World</a></li></ul><ul id="12d3b0cc-a2bc-804a-ac5c-ed2d368f0c7b" class="bulleted-list"><li style="list-style-type:disc"><a href="http://recipes.sparkpeople.com/">Spark Recipes</a></li></ul><ul id="12d3b0cc-a2bc-8006-89e0-ec769dcf2089" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.splendidtable.org/">Splendid Table</a></li></ul><ul id="12d3b0cc-a2bc-80ac-9a1f-f825ca1f938f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tablefortwoblog.com/">Table for Two</a></li></ul><ul id="12d3b0cc-a2bc-80e7-a425-d7150247f801" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tastingtable.com/">Tasting Table</a></li></ul><ul id="12d3b0cc-a2bc-8007-b3bd-c89c6482f3b7" class="bulleted-list"><li style="list-style-type:disc"><a href="https://realfood.tesco.com/">Tesco Real Food</a></li></ul><ul id="12d3b0cc-a2bc-80a7-a63a-d714c98a9511" class="bulleted-list"><li style="list-style-type:disc"><a href="http://abc.go.com/shows/the-chew/recipes/">The Chew (abc.go.com)</a></li></ul><ul id="12d3b0cc-a2bc-80d1-803d-ccbd26a49d5c" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.waitrose.com/">Waitrose</a></li></ul><ul id="12d3b0cc-a2bc-8049-b5fe-ecd62a28e419" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.weber.com/">Weber</a></li></ul><ul id="12d3b0cc-a2bc-8004-8ff3-fae8e3335560" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.weightwatchers.com/">Weight Watchers</a></li></ul><ul id="12d3b0cc-a2bc-80ca-8c63-de74ad7ea24f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.whats4eats.com/">Whats4Eats</a></li></ul><ul id="12d3b0cc-a2bc-8034-ba66-dbc087588637" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.wholefoodsmarket.com/">Whole Foods Market</a></li></ul><ul id="12d3b0cc-a2bc-80bb-97ec-c94f3ed32c95" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.wikihow.com/">WikiHow</a></li></ul><ul id="12d3b0cc-a2bc-8012-ae9b-cc60640c4b8b" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.williams-sonoma.com/">Williams-Sonoma</a></li></ul><ul id="12d3b0cc-a2bc-80e3-85fd-fa786b5944fa" class="bulleted-list"><li style="list-style-type:disc"><a href="http://yumm.com/">Yumm</a></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong><a href="#international">International</a></strong></summary><div class="indented"><ul id="12d3b0cc-a2bc-80d0-ac99-d89da7949df7" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.troisfoisparjour.com/">3 Fois Par Jour (FR &amp; EN)</a></li></ul><ul id="12d3b0cc-a2bc-80e4-b243-cd0080c07907" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.ah.nl/">Albert Heijn (NL)</a></li></ul><ul id="12d3b0cc-a2bc-8080-a8db-e78086498113" class="bulleted-list"><li style="list-style-type:disc"><a href="http://qc.allrecipes.ca/">All Recipes (QC/CA)</a></li></ul><ul id="12d3b0cc-a2bc-8056-bb46-cf0f5c407a7b" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.allrecipes.com.au/">AllRecipes (AU)</a></li></ul><ul id="12d3b0cc-a2bc-80c6-aeee-fb89aa45a1a5" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.allrecipes.co.uk/">AllRecipes (UK)</a></li></ul><ul id="12d3b0cc-a2bc-8027-bbb3-c3d0d374a27b" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.allrecipes.cn/">AllRecipesCN (CN)</a></li></ul><ul id="12d3b0cc-a2bc-8053-a54f-f1d316c80225" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.arla.dk/">Arla.dk (DA)</a></li></ul><ul id="12d3b0cc-a2bc-8064-a3e6-c58a6a0d3d78" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.arla.se/">Arla.se (SE)</a></li></ul><ul id="12d3b0cc-a2bc-8038-8f9a-f9529a3446fa" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.atria.fi/">Atria/Kokkaamo (FI)</a></li></ul><ul id="12d3b0cc-a2bc-80bf-a0a8-c6b63a86b45a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.aww.com.au/">Australian Women&#x27;s Weekly</a></li></ul><ul id="12d3b0cc-a2bc-8032-96eb-fbcd5455f8b9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.bestrecipes.com.au/">Best Recipes (AU)</a></li></ul><ul id="12d3b0cc-a2bc-8061-9fc8-ed307b23d201" class="bulleted-list"><li style="list-style-type:disc"><a href="http://au.lifestyle.yahoo.com/">Better Homes &amp; Gardens (AU)</a></li></ul><ul id="12d3b0cc-a2bc-8035-af46-d4c2119fba72" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.chefkoch.de/">Chef Koch (DE)</a></li></ul><ul id="12d3b0cc-a2bc-809e-a8c2-eafc5b92dea2" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.saison.ch/">Chuchitisch (CH)</a></li></ul><ul id="12d3b0cc-a2bc-80d6-a398-de510c3a1154" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.clickgratis.com.br/">Click Gratis (BR)</a></li></ul><ul id="12d3b0cc-a2bc-80d3-bf00-d9c29be303d8" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.colruyt.be/">Colruyt.be (NL)</a></li></ul><ul id="12d3b0cc-a2bc-80e4-ab77-f403e50f2207" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cookaround.com/">Cookaround (IT)</a></li></ul><ul id="12d3b0cc-a2bc-80da-acd3-c0c9726fef18" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.cookpad.com/">Cookpad (JP)</a></li></ul><ul id="12d3b0cc-a2bc-80bd-bba7-db83e55f6801" class="bulleted-list"><li style="list-style-type:disc"><a href="http://recipe.cotta.jp/">Cotta (JP)</a></li></ul><ul id="12d3b0cc-a2bc-8043-b1c1-e0b29a69de50" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.douguo.com/">Douguo.com (CN)</a></li></ul><ul id="12d3b0cc-a2bc-8051-b6af-f6e99da47fa5" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.een.be/">Een.be (NL)</a></li></ul><ul id="12d3b0cc-a2bc-8020-9f36-cdcd3c4c9818" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.enreceptem.hu/">Enreceptem (HU)</a></li></ul><ul id="12d3b0cc-a2bc-80ae-945b-e209a1ca6e78" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.erecipe.woman.excite.co.jp/">Erecipe (JP)</a></li></ul><ul id="12d3b0cc-a2bc-8064-bc4f-fc2b63fb7943" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.foodnetwork.ca/">Food Network (CA)</a></li></ul><ul id="12d3b0cc-a2bc-801a-9ee8-cf066abb040c" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.foodnetwork.co.uk/">Food Network (UK)</a></li></ul><ul id="12d3b0cc-a2bc-808d-a47c-e30615198bc7" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.giallozafferano.it/">Giallo Zafferano (IT)</a></li></ul><ul id="12d3b0cc-a2bc-8075-a60d-facb10d7c04f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://goodfood.uktv.co.uk/">Good Food Channel</a></li></ul><ul id="12d3b0cc-a2bc-809a-8722-ffe9e8637a58" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.gourmettraveller.com.au/">Gourmet Traveller</a></li></ul><ul id="12d3b0cc-a2bc-807f-9f0d-d34975247c0e" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.gustave.com/">Gustave (FR)</a></li></ul><ul id="12d3b0cc-a2bc-809d-8982-d61403be5ca6" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.haodou.com/">Haodou.com (CN)</a></li></ul><ul id="12d3b0cc-a2bc-80a1-875e-cd1c86551f16" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.hueyskitchen.com.au/">Huey&#x27;s Kitchen (AU)</a></li></ul><ul id="12d3b0cc-a2bc-80cf-aeb2-d2d447a3c71a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.ichkoche.at/">Ich Koche (AT)</a></li></ul><ul id="12d3b0cc-a2bc-80a0-8911-e096012b9b78" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.iga.net/">IGA (FR)</a></li></ul><ul id="12d3b0cc-a2bc-80fa-b656-d96c272f6ad2" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.k-ruoka.fi/">K-ruoka (FI)</a></li></ul><ul id="12d3b0cc-a2bc-8042-bb29-d0c1b6ec9c51" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.kochbar.de/">Kochbar (DE)</a></li></ul><ul id="12d3b0cc-a2bc-80b0-b1ce-c520c3357c5e" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.koket.se/">köket/recept.nu (SE)</a></li></ul><ul id="12d3b0cc-a2bc-8027-a50a-fc993be06367" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.kotikokki.net/">Kotikokki (FI)</a></li></ul><ul id="12d3b0cc-a2bc-8073-8019-c42f5cb63328" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.kotiliesi.fi/">Kotiliesi (FI)</a></li></ul><ul id="12d3b0cc-a2bc-8007-812e-fd20e5654606" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.kraftcanada.com/">Kraft Canada</a></li></ul><ul id="12d3b0cc-a2bc-8065-9e87-c4083ba7da66" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.kyounoryouri.jp/">Kyounoryouri (JP)</a></li></ul><ul id="12d3b0cc-a2bc-8082-ae3e-fb46ee14759b" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.lcbo.com/">LCBO</a></li></ul><ul id="12d3b0cc-a2bc-80aa-9c21-d0a8f697c3e3" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.lifestylefood.com.au/">Lifestyle Food (AU)</a></li></ul><ul id="12d3b0cc-a2bc-80dd-ab4a-d3c6268c4117" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.maggi.com.au/">Maggi (AU)</a></li></ul><ul id="12d3b0cc-a2bc-8082-b2de-ee98b42d19e0" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.marmiton.org/">Marmiton (FR)</a></li></ul><ul id="12d3b0cc-a2bc-807b-84c5-d44251c1bc60" class="bulleted-list"><li style="list-style-type:disc"><a href="http://tenplay.com.au/channel-ten/masterchef/recipes/">Masterchef (AU) (on TenPlay)</a></li></ul><ul id="12d3b0cc-a2bc-80cf-a068-ebd9ab029e57" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.matprat.no/">Mat Prat (NO)</a></li></ul><ul id="12d3b0cc-a2bc-80e1-9217-c7a6a93e7552" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.metro.ca/">Metro (CA)</a></li></ul><ul id="12d3b0cc-a2bc-8049-9e54-e8c58b129476" class="bulleted-list"><li style="list-style-type:disc"><a href="http://food.ninemsn.com.au/">Nine MSN</a></li></ul><ul id="12d3b0cc-a2bc-807d-be0f-f1e4b01e00f9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.nosalty.hu/">NoSalty (HU)</a></li></ul><ul id="12d3b0cc-a2bc-80b3-982e-c7ccf6cf9de9" class="bulleted-list"><li style="list-style-type:disc"><a href="http://ntv.co.jp/">NTV (JP)</a></li></ul><ul id="12d3b0cc-a2bc-80c3-b603-caf49855fb14" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.orangepage.net/">Orangepage.net (JP)</a></li></ul><ul id="12d3b0cc-a2bc-8023-99fc-e66ed06581c5" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.presidentschoice.ca/">President&#x27;s Choice (CA)</a></li></ul><ul id="12d3b0cc-a2bc-80a6-953a-ccf933b0b5c6" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.prima.co.uk/">Prima (UK)</a></li></ul><ul id="12d3b0cc-a2bc-8089-9855-e0cf80f93074" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.przyslijprzepis.pl/">Przysślij Przepis (PL)</a></li></ul><ul id="12d3b0cc-a2bc-8005-a29d-e73af704790a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.gshow.globo.com/">Receitas (BR)</a></li></ul><ul id="12d3b0cc-a2bc-802e-bb83-fdf03888426a" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.recetario.es/">Recetario.es (Thermomix, ES)</a></li></ul><ul id="12d3b0cc-a2bc-806c-9ada-c1866ff60931" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.recettes.qc.ca/">Recettes du Québec (CA)</a></li></ul><ul id="12d3b0cc-a2bc-8081-863a-f105ce7450b5" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.recipe-blog.jp/">Recipe-Blog (JP)</a></li></ul><ul id="12d3b0cc-a2bc-807a-920b-f795eeb517cb" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.rezeptwelt.de/">Rezeptwelt.de (Thermomix, DE)</a></li></ul><ul id="12d3b0cc-a2bc-802e-97dd-f734f8b5daef" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.ricardocuisine.com/">Ricardo Cuisine (FR)</a></li></ul><ul id="12d3b0cc-a2bc-8066-9585-cbbac0ed2c0f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.saison.ch/">Saison (CH)</a></li></ul><ul id="12d3b0cc-a2bc-80cf-b195-ca706f103ecc" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.sbs.com.au/">SBS Recipes (AU)</a></li></ul><ul id="12d3b0cc-a2bc-80b2-96c3-c833ac8e71ee" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.smulweb.nl/">Smulweb (NL)</a></li></ul><ul id="12d3b0cc-a2bc-805e-855a-d89160087302" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.taste.com.au/">Taste.com.au</a></li></ul><ul id="12d3b0cc-a2bc-800e-a7bf-d689f22fb215" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tasteline.com/">Tasteline (SE)</a></li></ul><ul id="12d3b0cc-a2bc-808c-ade3-f84ae9e12f94" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tine.no/">Tine (NO)</a></li></ul><ul id="12d3b0cc-a2bc-80da-af73-eb8edf82fc61" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.toprecepty.cz/">Toprecepty (CZ)</a></li></ul><ul id="12d3b0cc-a2bc-805e-a205-e4fcba8ca101" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.tudogostoso.com.br/">Tudo Gostoso (BR)</a></li></ul><ul id="12d3b0cc-a2bc-8052-9aa1-e073d9aec7f4" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.vareni.cz/">Vareni (CZ)</a></li></ul><ul id="12d3b0cc-a2bc-80d8-b3c2-e48e724cf654" class="bulleted-list"><li style="list-style-type:disc"><a href="http://koken.vtm.be/">VTM (NL)</a></li></ul><ul id="12d3b0cc-a2bc-8032-89ca-d4aab57072ea" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.weightwatchers.ca/">Weight Watchers (CA)</a></li></ul><ul id="12d3b0cc-a2bc-8083-8338-f5dd6feaa80c" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.weightwatchers.fr/">Weight Watchers (FR)</a></li></ul><ul id="12d3b0cc-a2bc-80d4-b52c-ed15c59d29f1" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.xiachufang.com/">Xiachufang (CN)</a></li></ul></div></details></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
